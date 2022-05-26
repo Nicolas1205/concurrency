@@ -1,6 +1,7 @@
 # Concurrency
 
-**TODO: Add description**
+
+A concurrent agnostic-language scheduler
 
 ## Installation
 
