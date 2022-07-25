@@ -8,9 +8,7 @@ defmodule Parser do
 	  schedule = Map.new schedule, fn({key,value}) ->
 		{String.to_atom(key), value}
 		end
-	  struct(Schedule,schedule)
+	  {:ok, struct(Schedule, schedule)}
 	 end
-	 # Poision Library
-	 # Poison.decode!(json, as: [%Bear{}])
   end
 end

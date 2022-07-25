@@ -16,12 +16,7 @@ defmodule Watcher do
     {:noreply, state}
   end
 
-  #def handle_info({:file_event, _watcher_pid , {path , events}}) do
-  #  {:noreply, :ok}
-  #end
-
-  def handle_info({file_event, watcher_pid, :stop}, %{watcher_pid: watcher_pid} = state) do
-	IO.puts("Some Stoped")
+  def handle_info({:file_event, watcher_pid, :stop}, %{watcher_pid: watcher_pid} = state) do
     {:noreply, state}
   end
 end
