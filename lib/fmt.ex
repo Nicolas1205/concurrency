@@ -1,10 +1,9 @@
-defmodule Fmt do 
-	def fmt_date(d) do 
+defmodule Fmt do
+	def fmt_date(d) do
 		"#{d}"
 	end
 
-
-	def fmt_datetime(d, t) do 
+	def fmt_datetime(d, t) do
 		"#{d} #{t}"
 	end
 

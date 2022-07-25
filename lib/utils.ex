@@ -1,5 +1,5 @@
-defimpl String.Chars, for: PID do 
-	def to_string(pid) do 
+defimpl String.Chars, for: PID do
+	def to_string(pid) do
 		info  = Process.info pid
 		name = info[:registered_name]
 
